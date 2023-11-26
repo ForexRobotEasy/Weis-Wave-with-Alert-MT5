@@ -1,0 +1,66 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                         Weis Wave with Alert MT5 |
+//|                                 Developed by Forex Robot Easy Team |
+//|                                           www.forexroboteasy.com |
+//+------------------------------------------------------------------+
+#property strict
+
+int OnInit()
+{
+    // Initialize necessary variables and indicators
+    return INIT_SUCCEEDED;
+}
+
+void OnDeinit(const int reason)
+{
+    // Clear any allocated resources
+}
+
+void OnTick()
+{
+    // Implement necessary logic for analyzing market trends and identifying entry and exit points
+    // Calculate wave volume
+    double waveVolume = CalculateWaveVolume();
+    
+    // Check for significant market movements and potential trading opportunities
+    if (waveVolume > 0 && IsAlertCriteriaMet(waveVolume))
+    {
+        // Trigger alert
+        TriggerAlert();
+    }
+}
+
+double CalculateWaveVolume()
+{
+    // Implement logic to calculate wave volume
+    double volume = 0;
+    
+    // Perform necessary calculations
+    
+    return volume;
+}
+
+bool IsAlertCriteriaMet(const double waveVolume)
+{
+    // Implement logic to check if alert criteria is met
+    bool criteriaMet = false;
+    
+    // Check if wave volume meets specific criteria
+    
+    return criteriaMet;
+}
+
+void TriggerAlert()
+{
+    // Implement logic to trigger alert
+    // Send notification to trader or perform necessary actions
+    
+    // Example: Print alert message on the chart
+    Comment('Alert: Significant market movement detected!');
+}
+
+// Add additional functions and logic as required
+
+// ...
+
